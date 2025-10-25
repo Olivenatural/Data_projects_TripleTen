@@ -22,7 +22,15 @@ Welcome! This is my collection of TripleTen data projects.
    - The steps I took (plain English)
    - Results and what they mean
    - How to run the notebook/code
-  
+
+  > Tip: You can browse without running code. The READMEs are written to be friendly and simple.
+
+---
+
+## About Me
+I’m Tamauri — a wellness-focused Data Analyst / Jr. Data Scientist.  
+I translate real-world massage therapy experience into data stories that help retain customers and grow revenue.
+
 ### Run with Sample Data (Quick Demo)
 If you just want to try the notebook:
 1) Keep `data/sample/imdb_reviews_sample.tsv` in the project folder.
@@ -35,12 +43,3 @@ DATA_PATH = "data/sample/imdb_reviews_sample.tsv"   # small demo
 import pandas as pd
 df = pd.read_csv(DATA_PATH, sep="\t" if DATA_PATH.endswith(".tsv") else ",")
 df.head()
-
-
-> Tip: You can browse without running code. The READMEs are written to be friendly and simple.
-
----
-
-## About Me
-I’m Tamauri — a wellness-focused Data Analyst / Jr. Data Scientist.  
-I translate real-world massage therapy experience into data stories that help retain customers and grow revenue.
