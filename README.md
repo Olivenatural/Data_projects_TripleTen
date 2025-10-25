@@ -30,16 +30,3 @@ Welcome! This is my collection of TripleTen data projects.
 ## About Me
 I’m Tamauri — a wellness-focused Data Analyst / Jr. Data Scientist.  
 I translate real-world massage therapy experience into data stories that help retain customers and grow revenue.
-
-### Run with Sample Data (Quick Demo)
-If you just want to try the notebook:
-1) Keep `data/sample/imdb_reviews_sample.tsv` in the project folder.
-2) In the notebook, set:
-
-```python
-DATA_PATH = "data/sample/imdb_reviews_sample.tsv"   # small demo
-# DATA_PATH = "/datasets/imdb_reviews.tsv"          # full dataset (TripleTen env)
-
-import pandas as pd
-df = pd.read_csv(DATA_PATH, sep="\t" if DATA_PATH.endswith(".tsv") else ",")
-df.head()
