@@ -1,0 +1,4 @@
+# ignore all data by default
+**/data/*
+# keep sample subfolders
+!**/data/sample/
