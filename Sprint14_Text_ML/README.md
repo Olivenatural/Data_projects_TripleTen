@@ -127,3 +127,30 @@ Python • pandas • NumPy • Matplotlib • NLTK • spaCy • scikit-learn �
 
 ## 🗝️ Keywords  
 NLP · Sentiment Analysis · TF-IDF · spaCy · LightGBM · BERT · IMDb · Logistic Regression · Text Classification · Machine Learning
+
+---
+
+## 💫 About Me  
+
+Hi, I’m **Tamauri** — a wellness-focused **Data Analyst / Junior Data Scientist**.  
+I combine 10+ years of massage therapy experience with data storytelling to uncover insights that help retain customers and increase revenue.  
+
+This project connects to my long-term goal of applying machine learning and NLP to the **wellness industry**, such as predicting client feedback tone or analyzing spa reviews to improve customer experience.
+
+---
+
+## ⚙️ Run with Sample Data (Quick Demo)
+
+If you’d like to explore this notebook without loading the full IMDb dataset:
+
+1. Place this file in your project folder:  
+   `data/sample/imdb_reviews_sample.tsv`
+
+2. In your notebook, set the path:
+   ```python
+   DATA_PATH = "data/sample/imdb_reviews_sample.tsv"   # small demo
+   # DATA_PATH = "/datasets/imdb_reviews.tsv"          # full dataset (TripleTen env)
+
+   import pandas as pd
+   df = pd.read_csv(DATA_PATH, sep="\t" if DATA_PATH.endswith(".tsv") else ",")
+   df.head()
