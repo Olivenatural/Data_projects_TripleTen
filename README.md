@@ -3,7 +3,6 @@
 Welcome! This is my collection of TripleTen data projects.  
 **Audience:** Recruiters, hiring managers, and mentors.  
 **Reading level:** Clear and simple. No deep tech background required.
-
 ---
 
 ## Table of Contents
