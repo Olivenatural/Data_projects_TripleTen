@@ -1,4 +1,73 @@
-# ignore all data by default
-**/data/*
-# keep sample subfolders
-!**/data/sample/
+# --- OS / Editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.eggs/
+.build/
+dist/
+build/
+venv/
+.venv/
+.env
+.env.*
+.python-version
+
+# Jupyter checkpoints & autosaves
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.checkpoint.ipynb
+
+# --- Tests / tooling caches ---
+.mypy_cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+.tox/
+
+# --- Logs / temp ---
+*.log
+logs/
+tmp/
+temp/
+
+# --- Data (keep only tiny demo samples) ---
+# Ignore all data by default...
+data/**
+datasets/**
+# ...but DO keep sample files for quick demos
+!data/sample/
+!data/sample/**
+
+# If you add other public-small samples somewhere else, unignore explicitly:
+# !datasets/sample/
+# !datasets/sample/**
+
+# --- Models / artifacts ---
+models/
+checkpoints/
+*.pt
+*.pth
+*.h5
+*.onnx
+*.joblib
+*.pickle
+*.pkl
+
+# --- Notebooks outputs (optional) ---
+# Comment these out if you want to track rendered assets
+*.png
+*.pdf
+*.svg
+
+# --- Node / front-end (if any) ---
+node_modules/
