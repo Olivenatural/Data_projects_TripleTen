@@ -12,6 +12,9 @@ Welcome! This is my collection of TripleTen data projects.
 - [Sprint 16 — Unsupervised Learning](./Sprint16_Unsupervised_Learning/README.md)
 - [Sprint 17 — Final Project](./Sprint17_Final_Project/README.md)
 
+### 📘 Sprint 14 — Machine Learning for Texts
+[View Project Folder →](./Sprint14_Text_ML)
+
 ---
 
 ## How to Explore
