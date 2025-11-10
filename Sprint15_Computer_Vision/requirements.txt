@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+Pillow
+opencv-python
+# Deep learning (pick one stack and uncomment)
+# tensorflow
+# torch
+# torchvision
