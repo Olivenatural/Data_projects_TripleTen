@@ -240,18 +240,20 @@ AI-based age estimation can support human-centered applications across multiple 
 
 | # | Description | Image |
 |:--|:-------------|:------|
-| 1 | Sample Images (Data Preview) | ![Sample Images](docs/screenshots/01_sample_images.jpg) |
-| 2 | EDA – Age Distribution | ![Age Distribution](docs/screenshots/02_age_distribution.jpg) |
-| 3 | Labels & Columns | ![Labels & Columns](docs/screenshots/03_labels_and_columns.jpg) |
-| 4 | Train / Val / Test Split | ![Split](docs/screenshots/04_train_val_test_split.jpg) |
-| 5 | Model Summary (ResNet50 + Regression Head) | ![Model Summary](docs/screenshots/05_model_summary.jpg) |
-| 6 | Training Logs (Epochs 1–5) | ![Logs 1–5](docs/screenshots/06_training_logs_epoch_1_5.jpg) |
-| 7 | Training Logs (Epochs 15–20) | ![Logs 15–20](docs/screenshots/07_training_logs_epoch_15_20.jpg) |
-| 8 | Predictions Examples | ![Predictions](docs/screenshots/08_predictions_examples.jpg) |
-| 9 | Performance Chart | ![Performance](docs/screenshots/09_performance_chart.jpg) |
-| 10 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
-| 11 | Conclusion | ![Conclusion](docs/screenshots/11_conclusion.jpg) |
-| 12 | Next Steps | ![Next Steps](docs/screenshots/12_next_steps.jpg) |
+| 1 | Initialization | [Initialization](docs/screenshots/00_initialization.jpg) |
+| 2 | Load Data | [Load Data](docs/screenshots/00_load_data.jpg) |
+| 3 | Sample Images (Data Preview) | ![Sample Images](docs/screenshots/01_sample_images.jpg) |
+| 4 | EDA – Age Distribution | ![Age Distribution](docs/screenshots/02_age_distribution.jpg) |
+| 5| Labels & Columns | ![Labels & Columns](docs/screenshots/03_labels_and_columns.jpg) |
+| 6 | Train / Val / Test Split | ![Split](docs/screenshots/04_train_val_test_split.jpg) |
+| 7 | Model Summary (ResNet50 + Regression Head) | ![Model Summary](docs/screenshots/05_model_summary.jpg) |
+| 8 | Training Logs (Epochs 1–5) | ![Logs 1–5](docs/screenshots/06_training_logs_epoch_1_5.jpg) |
+| 9 | Training Logs (Epochs 15–20) | ![Logs 15–20](docs/screenshots/07_training_logs_epoch_15_20.jpg) |
+| 10 | Predictions Examples | ![Predictions](docs/screenshots/08_predictions_examples.jpg) |
+| 11| Performance Chart | ![Performance](docs/screenshots/09_performance_chart.jpg) |
+| 12 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
+| 13 | Conclusion | ![Conclusion](docs/screenshots/11_conclusion.jpg) |
+| 14 | Next Steps | ![Next Steps](docs/screenshots/12_next_steps.jpg) |
 
 </details>
 ---
