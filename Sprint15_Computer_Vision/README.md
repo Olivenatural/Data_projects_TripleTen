@@ -254,7 +254,7 @@ AI-based age estimation can support human-centered applications across multiple 
 | 5| Labels & Columns | ![Labels & Columns](docs/screenshots/03_labels_and_columns.jpg) |
 | 6 | Train / Val / Test Split | ![Split](docs/screenshots/04_train_val_test_split.jpg) |
 | 7 | Modeling Functions (GPU Script + Model Code) | ![Modeling Functions](docs/screenshots/04a_modelling_functions_01.jpg) |
-| 8 | Training Logs (Epochs 1–5) | ![Logs 1–16](docs/screenshots/06_training_logs_epoch_1_16.jpg) |
+| 8 | Training Logs (Epochs 1–16) | ![Logs 1–16](docs/screenshots/06_training_logs_epoch_1_16.jpg) |
 | 9 | Training Logs (Epochs 17–20) | ![Logs 17–20](docs/screenshots/07_training_logs_epoch_17_20.jpg) |
 | 10 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
 | 11 | Conclusion | ![Conclusion](docs/screenshots/12_conclusion.jpg) |
