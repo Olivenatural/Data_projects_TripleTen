@@ -20,7 +20,7 @@ As someone passionate about wellness and the human experience, I explored how AI
 
 </p>
 
-📸 [Jump to Screenshot Gallery](#14--project-screenshots)
+📸 [Jump to Screenshot Gallery](#15--project-screenshots)
 ---
 
 ## 📚 Table of Contents
@@ -34,15 +34,16 @@ As someone passionate about wellness and the human experience, I explored how AI
 8. 🧪 [08 — Approach & Methodology](#08--approach--methodology)  
 9. 🧬 [09 — Model Architecture Summary](#09--model-architecture-summary)  
 10. 📊 [10 — Exploratory Data Analysis (EDA)](#10--exploratory-data-analysis-eda)  
-11. 📉 [11 — Model Performance & Results](#11--model-performance--results)  
-12. 🌿 [12 — Business & Wellness Value](#12--business--wellness-value)  
-13. 🔮 [13 — Next Steps & Improvements](#13--next-steps--improvements)  
-14. 🖼️ [14 — Project Screenshots](#14--project-screenshots)  
-15. 👤 [15 — Author & Connect](#15--author--connect)  
+11. ⚙️ [11 — Training & Validation](#11--training--validation)  
+12. 📉 [12 — Model Performance & Results](#12--model-performance--results)  
+13. 🌿 [13 — Business & Wellness Value](#13--business--wellness-value)  
+14. 🔮 [14 — Next Steps & Improvements](#14--next-steps--improvements)  
+15. 🖼️ [15 — Project Screenshots](#15--project-screenshots)  
+16. 👤 [16 — Author & Connect](#16--author--connect)
 
 ---
 
-## ✨ 00 — Problem Statement
+## ✨ 01 — Problem Statement
 
 Predicting a person’s age from an image is a challenging computer vision task due to variations in lighting, angles, genetics, skin tone, lifestyle, and image quality. Understanding age through AI can support more personalized user experiences — including tailored content, accessibility, and safety.
 
@@ -51,7 +52,7 @@ Predicting a person’s age from an image is a challenging computer vision task 
 
 ---
 
-## 🎯 01 — Project Goals
+## 🎯 02 — Project Goals
 
 This project was designed to:
 
@@ -62,7 +63,7 @@ This project was designed to:
 
 ---
 
-## 🧵 02 — Dataset Overview
+## 🧵 03 — Dataset Overview
 
 - ~7,600 labeled face images  
 - Each image includes: `file_name` and `real_age`  
@@ -70,12 +71,14 @@ This project was designed to:
 - Age distribution is uneven, with fewer images for ages 60+
 
   **Example Data Sample:**  
-![Sample Images](docs/screenshots/01_sample_images.jpg)
+![Sample Images](docs/screenshots/02_sample_images_01.jpg)
+![Sample Images](docs/screenshots/02_sample_images_02.jpg)
+
 
 
 ---
 
-## 🧰 03 — Tech Stack
+## 🧰 04 — Tech Stack
 
 - **Languages:** Python  
 - **Frameworks:** TensorFlow, Keras  
@@ -84,7 +87,7 @@ This project was designed to:
 
 ---
 
-## ⚙️ 04 — Quickstart
+## ⚙️ 05 — Quickstart
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -94,7 +97,7 @@ jupyter notebook
 
 ---
 
-## 📂 05 — Project Structure
+## 📂 06 — Project Structure
 
 ```
 Sprint15_Computer_Vision/
@@ -115,7 +118,7 @@ Sprint15_Computer_Vision/
 
 ---
 
-## ▶️ 06 — How to Run the Project
+## ▶️ 07 — How to Run the Project
 
 ### 📓 Run via Notebook (Recommended)
 
@@ -131,7 +134,7 @@ python -m src.train --data_dir data/processed --out_dir models/
 
 ---
 
-## 🧪 07 — Approach & Methodology
+## 🧪 08 — Approach & Methodology
 
 **Data Preparation**  
 - Loaded image data & labels  
@@ -150,16 +153,19 @@ python -m src.train --data_dir data/processed --out_dir models/
 ---
 
 
-## 08 🔍 Exploratory Data Analysis (EDA)  
+## 09 🔍 Exploratory Data Analysis (EDA)  
 
 #### Age Distribution  
 Most samples are between 15 and 40 years old, creating a right-skewed distribution.  
 Fewer elderly faces introduce a slight imbalance biasing younger predictions.  
 
-![Age Distribution](docs/screenshots/02_age_distribution.jpg)
+![Age Distribution](docs/screenshots/01_age_distribution_01.jpg)
+![Age Distribution](docs/screenshots/01_age_distribution_02.jpg)
+![Age Distribution](docs/screenshots/01_age_distribution_03.jpg)
 
 
-## 🧬 09 — Model Architecture Summary
+
+## 🧬 10 — Model Architecture Summary
 
 Built with **ResNet50 (pre-trained on ImageNet)** + custom regression head:  
 1. Global Average Pooling layer  
@@ -171,7 +177,7 @@ Built with **ResNet50 (pre-trained on ImageNet)** + custom regression head:
 ---
 
 
-  ## 10 ⚙️ Training and Validation  
+  ## 11 ⚙️ Training and Validation  
 
 #### Early Epochs (1–5)  
 Training and validation MAE trend at the start of training.  
@@ -184,7 +190,11 @@ Model stabilized around a validation MAE of ≈ 6.6 – 8.5 years.
 
 ---
 
-## 📉 11 — Model Performance & Results
+## 📉 12 — Model Performance & Results
+
+> **Note:**  
+> Due to platform constraints, prediction visualizations and performance charts are described analytically rather than displayed as screenshots. All model behavior is supported by numerical metrics and training logs.
+
 
 The model achieved balanced performance with:
 
@@ -202,7 +212,7 @@ The model achieved balanced performance with:
 
 ---
 
-## 🌿 12 — Business & Wellness Value
+## 🌿 13 — Business & Wellness Value
 
 AI-based age estimation can support human-centered applications across multiple industries:
 
@@ -217,22 +227,18 @@ AI-based age estimation can support human-centered applications across multiple 
 - Personalized content or care suggestions aligned to life stages  
 - Can support more inclusive and thoughtful user experiences
 
-  ![Business Value](docs/screenshots/10_business_value.jpg)
-
 
 ---
 
-## 🔮 13 — Next Steps & Improvements
+## 🔮 14 — Next Steps & Improvements
 
 1. Add stronger data augmentation (brightness, zoom, shifts).  
 2. Fine-tune more layers of ResNet50 for better feature learning.  
 3. Test regularization (dropout, weight decay).  
 4. Expand dataset with older age groups to reduce bias.  
-
-![Next Steps](docs/screenshots/12_next_steps.jpg)
 ---
 
-## 🖼️ 14 — Project Screenshots
+## 🖼️ 15 — Project Screenshots
 
 <details>
 <summary>📸 View Full Screenshot Gallery (12)</summary>
@@ -249,20 +255,18 @@ AI-based age estimation can support human-centered applications across multiple 
 | 7 | Model Summary (ResNet50 + Regression Head) | ![Model Summary](docs/screenshots/05_model_summary.jpg) |
 | 8 | Training Logs (Epochs 1–5) | ![Logs 1–5](docs/screenshots/06_training_logs_epoch_1_5.jpg) |
 | 9 | Training Logs (Epochs 15–20) | ![Logs 15–20](docs/screenshots/07_training_logs_epoch_15_20.jpg) |
-| 10 | Predictions Examples | ![Predictions](docs/screenshots/08_predictions_examples.jpg) |
-| 11| Performance Chart | ![Performance](docs/screenshots/09_performance_chart.jpg) |
-| 12 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
-| 13 | Conclusion | ![Conclusion](docs/screenshots/11_conclusion.jpg) |
-| 14 | Next Steps | ![Next Steps](docs/screenshots/12_next_steps.jpg) |
+| 10 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
+| 11 | Conclusion | ![Conclusion](docs/screenshots/11_conclusion.jpg) |
+| 12 | Next Steps | ![Next Steps](docs/screenshots/12_next_steps.jpg) |
 
 </details>
 ---
 
-## 👤 15 — Author & Connect
+## 👤 16 — Author & Connect
 
 **Author:** *Tamauri Olive*  
 *Aspiring Wellness Data Scientist — Blending AI, Empathy & Impact*  
 
-[![Connect on LinkedIn](www.linkedin.com/in/tamauri-olive-499845113)](#)  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tamauri-olive-499845113) 
 🔗 [GitHub Profile](https://github.com/Olivenatural) | 📘 Sprint 15 Project
 
