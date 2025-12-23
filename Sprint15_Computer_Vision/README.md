@@ -172,20 +172,21 @@ Built with **ResNet50 (pre-trained on ImageNet)** + custom regression head:
 2. Dropout layer for regularization  
 3. Dense output layer with linear activation  
 
-![Model Summary](docs/screenshots/05_model_summary.jpg)
+![Modeling Functions](docs/screenshots/04a_modelling_functions_01.jpg)
+> Additional modeling steps (data loaders, model creation, training loop) are shown in subsequent screenshots.
 
 ---
 
 
   ## 11 ⚙️ Training and Validation  
 
-#### Early Epochs (1–5)  
+#### Early Epochs (1–16)  
 Training and validation MAE trend at the start of training.  
-![Training Logs 1–5](docs/screenshots/06_training_logs_epoch_1_5.jpg)
+![Training Logs 1–16](docs/screenshots/06_training_logs_epoch_1_16.jpg)
 
-#### Later Epochs (15–20)  
+#### Later Epochs (17–20)  
 Model stabilized around a validation MAE of ≈ 6.6 – 8.5 years.  
-![Training Logs 15–20](docs/screenshots/07_training_logs_epoch_15_20.jpg)
+![Training Logs 17–20](docs/screenshots/07_training_logs_epoch_17_20.jpg)
 
 
 ---
@@ -241,7 +242,7 @@ AI-based age estimation can support human-centered applications across multiple 
 ## 🖼️ 15 — Project Screenshots
 
 <details>
-<summary>📸 View Full Screenshot Gallery (12)</summary>
+<summary>📸 View Full Screenshot Gallery (11)</summary>
 <br>
 
 | # | Description | Image |
@@ -252,12 +253,11 @@ AI-based age estimation can support human-centered applications across multiple 
 | 4 | EDA – Age Distribution | ![Age Distribution](docs/screenshots/02_age_distribution.jpg) |
 | 5| Labels & Columns | ![Labels & Columns](docs/screenshots/03_labels_and_columns.jpg) |
 | 6 | Train / Val / Test Split | ![Split](docs/screenshots/04_train_val_test_split.jpg) |
-| 7 | Model Summary (ResNet50 + Regression Head) | ![Model Summary](docs/screenshots/05_model_summary.jpg) |
-| 8 | Training Logs (Epochs 1–5) | ![Logs 1–5](docs/screenshots/06_training_logs_epoch_1_5.jpg) |
-| 9 | Training Logs (Epochs 15–20) | ![Logs 15–20](docs/screenshots/07_training_logs_epoch_15_20.jpg) |
+| 7 | Modeling Functions (GPU Script + Model Code) | ![Modeling Functions](docs/screenshots/04a_modelling_functions_01.jpg) |
+| 8 | Training Logs (Epochs 1–5) | ![Logs 1–16](docs/screenshots/06_training_logs_epoch_1_16.jpg) |
+| 9 | Training Logs (Epochs 17–20) | ![Logs 17–20](docs/screenshots/07_training_logs_epoch_17_20.jpg) |
 | 10 | Business Value | ![Business Value](docs/screenshots/10_business_value.jpg) |
-| 11 | Conclusion | ![Conclusion](docs/screenshots/11_conclusion.jpg) |
-| 12 | Next Steps | ![Next Steps](docs/screenshots/12_next_steps.jpg) |
+| 11 | Conclusion | ![Conclusion](docs/screenshots/12_conclusion.jpg) |
 
 </details>
 ---
