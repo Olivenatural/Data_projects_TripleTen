@@ -1,11 +1,12 @@
-📌 SPRINT 17 — FINAL PROJECT  
-🌿 End-to-End Machine Learning Project  
+# 📌 SPRINT 17 — FINAL PROJECT  
+
+## 🌿 End-to-End Machine Learning Project  
 
 From business problem → production-ready insights  
 
 ---
 
-🎯 01 — Project Overview  
+## 🎯 01 — Project Overview  
 
 This final project brings together everything learned throughout the program into a single, end-to-end machine learning workflow.  
 
@@ -15,7 +16,7 @@ This project demonstrates my ability to think like a wellness-focused data scien
 
 ---
 
-🧠 02 — Business Problem  
+## 🧠 02 — Business Problem  
 
 The goal of this project is to solve a real-world predictive problem using historical data while answering key business questions:  
 
@@ -25,7 +26,7 @@ The goal of this project is to solve a real-world predictive problem using histo
 
 ---
 
-📦 03 — Dataset Overview  
+## 📦 03 — Dataset Overview  
 
 - Historical structured dataset  
 - Includes numerical and categorical features  
@@ -36,7 +37,7 @@ The dataset required extensive cleaning and validation before modeling.
 
 ---
 
-🧹 04 — Data Cleaning & Preparation  
+## 🧹 04 — Data Cleaning & Preparation  
 
 Key preparation steps included:  
 
@@ -50,7 +51,7 @@ Each decision was made to reduce bias and improve generalization, not just to sa
 
 ---
 
-🔍 05 — Exploratory Data Analysis (EDA)  
+## 🔍 05 — Exploratory Data Analysis (EDA)  
 
 Exploratory analysis was used to:  
 
@@ -63,7 +64,7 @@ Visualizations were used to justify why specific rows or values were removed.
 
 ---
 
-🤖 06 — Model Training & Evaluation  
+## 🤖 06 — Model Training & Evaluation  
 
 Multiple models were trained and evaluated using consistent metrics.  
 
@@ -78,7 +79,7 @@ Models were compared side-by-side to identify tradeoffs rather than chasing a si
 
 ---
 
-🧩 07 — Project Structure  
+## 🧩 07 — Project Structure  
 
 Sprint17_Final_Project/  
 │  
@@ -96,7 +97,7 @@ Sprint17_Final_Project/
 
 ---
 
-🧠 08 — Approach & Methodology  
+## 🧠 08 — Approach & Methodology  
 
 The project followed a structured, repeatable workflow:  
 
@@ -110,14 +111,14 @@ This approach mirrors how machine learning projects operate in production enviro
 
 ---
 
-💡 09 — Key Takeaways  
+## 💡 09 — Key Takeaways  
 
 - Model selection is a business decision, not just a technical one.  
 - Performance constraints strongly influence which models are practical in production.  
 
 ---
 
-🚀 10 — Next Steps & Improvements  
+## 🚀 10 — Next Steps & Improvements  
 
 - Feature selection and refinement  
 - Hyperparameter tuning  
@@ -126,7 +127,7 @@ This approach mirrors how machine learning projects operate in production enviro
 
 ---
 
-🖼 11 — Project Screenshots  
+## 🖼 11 — Project Screenshots  
 
 📸 Screenshot gallery coming soon.  
 
@@ -134,7 +135,7 @@ This approach mirrors how machine learning projects operate in production enviro
 
 ---
 
-👤 12 — Author & Connect  
+## 👤 12 — Author & Connect  
 
 Tamauri Olive  
 Aspiring Wellness Data Scientist — blending AI, empathy & impact  
