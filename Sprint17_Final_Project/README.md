@@ -4,6 +4,23 @@
 
 From business problem → production-ready insights  
 
+--
+
+## 📑 Table of Contents
+
+- [🎯 Project Overview](#-01--project-overview)
+- [🧠 Business Problem](#-02--business-problem)
+- [📦 Dataset Overview](#-03--dataset-overview)
+- [🧹 Data Cleaning & Preparation](#-04--data-cleaning--preparation)
+- [🔍 Exploratory Data Analysis (EDA)](#-05--exploratory-data-analysis-eda)
+- [🤖 Model Training & Evaluation](#-06--model-training--evaluation)
+- [🧩 Project Structure](#-07--project-structure)
+- [🧠 Approach & Methodology](#-08--approach--methodology)
+- [💡 Key Takeaways](#-09--key-takeaways)
+- [🚀 Next Steps & Improvements](#-10--next-steps--improvements)
+- [🖼 Project Screenshots](#-11--project-screenshots)
+- [👤 Author & Connect](#-12--author--connect)
+
 ---
 
 ## 🎯 01 — Project Overview  
@@ -140,4 +157,6 @@ This approach mirrors how machine learning projects operate in production enviro
 Tamauri Olive  
 Aspiring Wellness Data Scientist — blending AI, empathy & impact  
 
-🔗 GitHub · LinkedIn  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tamauri-olive-499845113) 
+🔗 [GitHub Profile](https://github.com/Olivenatural) | 📘 Sprint 17 Project
+
