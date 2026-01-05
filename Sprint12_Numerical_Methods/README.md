@@ -2,61 +2,94 @@
 
 **Project Title:** Predicting Used Car Prices (Rusty Bargain)
 
+I explore how different regression models perform under real-world business constraints —
+balancing **accuracy, training time, and prediction speed**.
+
+This project simulates a production decision where the “best” model is not always the most complex one.
+
+🏷️ **Tech Stack:** Python · pandas · scikit-learn · LightGBM · Jupyter
 ---
 
-## 🎯 Goal
-Build and compare regression models to predict used car prices while balancing prediction accuracy, training time, and inference speed.
+
+🎯 01 — Problem Statement
+Rusty Bargain needs fast and reliable car price estimates.
+The challenge is selecting a model that performs well without excessive computational cost.
 
 ---
+🎯 02 — Project Goals
+Prepare structured tabular data
 
-## 💡 Why It Matters
-In real-world applications, the best model is not always the most accurate one. Businesses must consider computational cost and response time when deploying machine learning solutions at scale.
+Train multiple regression models
 
+Compare accuracy vs performance trade-offs
+
+Select a model aligned with business needs
 ---
+🧾 03 — Dataset Overview
+Historical used-car listings
 
-## 🧠 Objectives
-- Prepare and preprocess structured tabular data  
-- Train multiple regression models  
-- Compare accuracy, training time, and prediction speed  
-- Select an optimal model based on business constraints  
+Numerical and categorical features
 
+Target variable: car price
 ---
+🧠 04 — Approach & Methodology
+Feature preprocessing
 
-## 🛠️ Methods & Techniques
-- Feature preprocessing  
-- Baseline regression modeling  
-- Decision Tree & Random Forest regression  
-- Gradient boosting (LightGBM)  
-- Model benchmarking and comparison  
+Baseline regression
 
+Decision Tree & Random Forest
+
+Gradient Boosting (LightGBM)
+
+Model benchmarking
 ---
+📊 05 — Evaluation & Metrics
+RMSE
 
-## 📊 Evaluation Metrics
-- RMSE (Root Mean Squared Error)  
-- Training time  
-- Prediction speed  
+Training time
 
+Prediction latency
 ---
+🧰 06 — Tools & Libraries
+Python
 
-## 🧰 Tools & Libraries
-- Python  
-- pandas  
-- NumPy  
-- scikit-learn  
-- LightGBM  
-- Jupyter Notebook  
+pandas
 
+NumPy
+
+scikit-learn
+
+LightGBM
 ---
+▶️ 07 — How to Run the Project
+Open the notebooks in sequence
 
-## 📁 Project Structure
-
+Run all cells
+---
+📁 08 — Project Structure
+kotlin
+Copy code
 Sprint12_Numerical_Methods/
 ├── notebooks/
 ├── data/
 └── README.md
-
-
 ---
+💡 09 — Key Takeaways
+Choosing a model is a business decision, not just a technical one.
+This project reinforced how performance constraints shape ML choices.
+---
+🚀 10 — Next Steps & Improvements
+Feature selection refinement
 
-## ✅ Key Takeaways
-This project highlights the importance of model selection based on both performance and business requirements, demonstrating practical decision-making in applied machine learning.
+Hyperparameter tuning
+
+Production-level inference testing
+---
+🖼 11 — Project Screenshots
+📸 Screenshot gallery coming soon
+---
+👤 12 — Author & Connect
+Tamauri Olive
+Aspiring Wellness Data Scientist — blending AI, empathy & impact
+
+🔗 GitHub · LinkedIn
