@@ -123,4 +123,6 @@ Tamauri Olive
 
 Aspiring Wellness Data Scientist — blending AI, empathy & impact
 
-🔗 LinkedIn: www.linkedin.com/in/tamauri-olive-499845113
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tamauri-olive-499845113) 
+🔗 [GitHub Profile](https://github.com/Olivenatural) | 📘 Sprint 13 Project
+
