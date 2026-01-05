@@ -89,7 +89,7 @@ The project follows a structured regression workflow:
 
 ## 📁 08 — Project Structure
 
-```text
+
 Sprint12_Numerical_Methods/
 ├── notebooks/
 ├── data/
