@@ -99,30 +99,32 @@ Sprint12_Numerical_Methods/
 
 ## 💡 09 — Key Takeaways
 
-Model selection is a business decision, not just a technical one.
+Model selection is a **business decision**, not just a technical one.  
+
 Performance constraints strongly influence which models are practical in production.
 
 ---
 
 ## 🚀 10 — Next Steps & Improvements
 
-Feature selection and refinement
-
-Hyperparameter tuning
-
-Production-level inference testing
+- Feature selection and refinement  
+- Hyperparameter tuning  
+- Production-level inference testing  
 
 ---
 
 ## 🖼 11 — Project Screenshots
 
-📸 Screenshot gallery coming soon.
+📸 **Screenshot Gallery**
+
+Screenshot gallery coming soon.
 
 ---
 
 ## 👤 12 — Author & Connect
 
-Tamauri Olive
-Aspiring Wellness Data Scientist — blending AI, empathy & impact
+**Tamauri Olive**  
+
+Aspiring Wellness Data Scientist — blending AI, empathy & impact  
 
 🔗 LinkedIn: www.linkedin.com/in/tamauri-olive-499845113
