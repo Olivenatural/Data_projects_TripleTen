@@ -5,21 +5,6 @@ I design AI with empathy, intention, and impact.
 As someone passionate about wellness and the human experience, I explored how AI can learn to estimate age through facial features in a thoughtful and responsible way. This project blends computer vision, ethical awareness, and real-world application — demonstrating how technology can support more personalized and inclusive experiences across different life stages.
 
 
-<p align="center">
-
-<img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python"/>
-<img src="https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange" alt="TensorFlow"/>
-<img src="https://img.shields.io/badge/Keras-Neural%20Networks-red" alt="Keras"/>
-
-<br>
-
-<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-yellow" alt="Pandas"/>
-<img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-purple" alt="NumPy"/>
-<img src="https://img.shields.io/badge/Matplotlib-Visualization-green" alt="Matplotlib"/>
-<img src="https://img.shields.io/badge/Jupyter-Notebook-orange" alt="Jupyter Notebook"/>
-
-</p>
-
 📸 [Jump to Screenshot Gallery](#15--project-screenshots)
 ---
 
