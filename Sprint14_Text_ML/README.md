@@ -103,9 +103,15 @@ Models were evaluated using:
 
 ## ▶️ 07 — How to Run the Project
 
-1. Open the main notebook  
-2. Run all cells sequentially  
+### Option 1: Run with the included sample file (recommended for GitHub)
+This repo includes a small sample dataset so the notebook can run quickly.
 
+```python
+import pandas as pd
+
+DATA_PATH = "data/sample/imdb_reviews_sample.tsv"
+df_reviews = pd.read_csv(DATA_PATH, sep="\t")
+df_reviews.head()
 **Quick Demo Option**
 - Use `data/sample/imdb_reviews_sample.tsv`  
 - Adjust `DATA_PATH` in the notebook  
