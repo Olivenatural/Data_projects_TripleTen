@@ -21,7 +21,7 @@ and transformer-based approaches.
 8. 📁 Project Structure  
 9. 💡 Key Takeaways  
 10. 🚀 Next Steps & Improvements  
-11. 🖼 Project Screenshots  
+11. 🖼 Project Files 
 12. 👤 Author & Connect  
 
 ---
@@ -141,11 +141,11 @@ Performance constraints strongly influence which models are practical in product
 
 ---
 
-## 🖼 11 — Project Screenshots
+## 📌 Project Files
 
-📸 Screenshot Gallery
-
-Screenshot gallery coming soon.
+- ✅ **Notebook:** [Sprint14_Text_ML.ipynb](./Sprint14_Text_ML.ipynb)
+- ✅ **Sample Data:** `data/sample/imdb_reviews_sample.tsv`
+- ✅ **Project Summary:** `README.md`
 
 ---
 
