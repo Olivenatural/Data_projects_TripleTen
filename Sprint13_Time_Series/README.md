@@ -127,5 +127,5 @@ Sprint13_Time_Series/
 **Tamauri Olive**  
 Aspiring Wellness Data Scientist — blending AI, empathy, and impact  
 
-🔗 LinkedIn: www.linkedin.com/in/tamauri-olive-499845113  
-🔗 GitHub: https://github.com/Olivenatural
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tamauri-olive-499845113) 
+🔗 [GitHub Profile](https://github.com/Olivenatural) | 📘 Sprint 13 Project
