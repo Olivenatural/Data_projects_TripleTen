@@ -1,14 +1,15 @@
 # ⏱📊 Time Series Forecasting with Machine Learning
 
-This project focuses on modeling time-dependent data while ensuring
-**leakage-free validation** and realistic forecasting.
+This project focuses on forecasting **hourly taxi demand** using historical data while strictly respecting the time dimension to prevent data leakage and ensure realistic model evaluation.
 
-🏷️ **Tech Stack:** Python · pandas · scikit-learn · Matplotlib · Jupyter Notebook
+---
+
+## 🏷️ Tech Stack
+Python · pandas · NumPy · scikit-learn · Matplotlib · Jupyter Notebook
 
 ---
 
 ## 📑 Table of Contents
-
 1. 🎯 Problem Statement  
 2. 🎯 Project Goals  
 3. 🧾 Dataset Overview  
@@ -19,110 +20,112 @@ This project focuses on modeling time-dependent data while ensuring
 8. 📁 Project Structure  
 9. 💡 Key Takeaways  
 10. 🚀 Next Steps & Improvements  
-11. 🖼 Project Screenshots  
-12. 👤 Author & Connect  
+11. 👤 Author & Connect  
 
 ---
 
 ## 🎯 01 — Problem Statement
-
-Forecast future values using historical data while strictly respecting
-the time dimension to avoid data leakage.
+Accurately forecast future values in time-dependent data while preserving chronological order and avoiding data leakage that could inflate model performance.
 
 ---
 
 ## 🎯 02 — Project Goals
-
-- Identify trends and patterns in time-dependent data  
-- Engineer time-based features  
-- Build and evaluate forecasting models  
+- Identify temporal patterns and seasonality in hourly taxi demand  
+- Engineer time-based features such as lag values and rolling statistics  
+- Train and evaluate forecasting models using time-aware validation  
+- Compare model performance against a naive baseline  
 
 ---
 
 ## 🧾 03 — Dataset Overview
+- Hourly time-indexed observations  
+- Target variable: `num_orders`  
+- Data resampled to hourly frequency  
+- Chronological ordering preserved throughout the analysis  
 
-- Time-indexed observations  
-- Continuous target variable  
-- Chronological ordering preserved  
+A small sample dataset is included in `data/sample/` to allow the project to run without access to the full dataset.
 
 ---
 
 ## 🧠 04 — Approach & Methodology
+This project follows a leakage-free time series workflow:
 
-The workflow emphasizes time awareness:
+**Exploratory Data Analysis (EDA)**
+- Visualized hourly demand to identify trends and seasonality  
 
-- Time series exploratory analysis  
-- Lag features and rolling statistics  
-- Time-based train/validation splitting  
+**Feature Engineering**
+- Lag features for the previous 1–24 hours  
+- Rolling mean features using 3, 6, 12, and 24-hour windows  
+- Calendar features including hour of day and day of week  
+
+**Train/Test Split**
+- Time-based split without shuffling  
+- Ensures future data is never used to predict the past  
 
 ---
 
 ## 📊 05 — Evaluation & Metrics
+Models were evaluated using **Root Mean Squared Error (RMSE)**.
 
-- RMSE  
-- MAE  
-- Visual comparison of forecasts  
+| Model | RMSE |
+|------|------|
+| Baseline (lag-1) | ~29.29 |
+| Linear Regression | ~20.45 |
+| Random Forest | ~20.68 |
+
+Linear Regression achieved the lowest RMSE, significantly outperforming the baseline model and demonstrating the impact of feature engineering on short-term forecasting.
 
 ---
 
 ## 🧰 06 — Tools & Libraries
-
 - Python  
 - pandas  
 - NumPy  
-- scikit-learn  
+-  -learn  
 - Matplotlib  
 
 ---
 
 ## ▶️ 07 — How to Run the Project
-
-Run notebooks in chronological order to preserve time integrity.
+1. Open `Sprint13_Time_Series.ipynb`
+2. Run all cells from top to bottom  
+3. Ensure the sample dataset exists at:
 
 ---
 
 ## 📁 08 — Project Structure
-
-
 Sprint13_Time_Series/
-├── notebooks/
+│
 ├── data/
-└── README.md
+│ └── sample/
+│ └── taxi_sample.csv
+│
+├── Sprint13_Time_Series.ipynb
+├── README.md
+└── .gitignore
+
 
 ---
 
 ## 💡 09 — Key Takeaways
-
-Model selection is a business decision, not just a technical one.
-
-Performance constraints strongly influence which models are practical in production.
-
----
-
-### 🚀 10 — Next Steps & Improvements
-
-- Feature selection and refinement
-
-- Hyperparameter tuning
-
-- Production-level inference testing
+- Time-aware validation is critical for forecasting tasks  
+- Simple models can outperform complex ones with strong feature engineering  
+- Baseline models provide essential context for evaluating performance  
+- Model selection should balance accuracy, interpretability, and practicality  
 
 ---
 
-### 🖼 11 — Project Screenshots
-
-📸 Screenshot Gallery
-
-Screenshot gallery coming soon.
+## 🚀 10 — Next Steps & Improvements
+- Hyperparameter tuning for tree-based models  
+- Feature selection to reduce multicollinearity  
+- Evaluation on longer forecasting horizons  
+- Production-style inference and monitoring  
 
 ---
 
-## 👤 12 — Author & Connect
+## 👤 11 — Author & Connect
+**Tamauri Olive**  
+Aspiring Wellness Data Scientist — blending AI, empathy, and impact  
 
-Tamauri Olive
-
-Aspiring Wellness Data Scientist — blending AI, empathy & impact
-
-🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tamauri-olive-499845113) 
-🔗 [GitHub Profile](https://github.com/Olivenatural) | 📘 Sprint 13 Project
-
+🔗 LinkedIn: www.linkedin.com/in/tamauri-olive-499845113  
+🔗 GitHub: https://github.com/Olivenatural
