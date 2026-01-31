@@ -21,24 +21,27 @@ and transformer-based approaches.
 8. 📁 Project Structure  
 9. 💡 Key Takeaways  
 10. 🚀 Next Steps & Improvements  
-11. 🖼 Project Files 
+11. 📌 Project Files  
 12. 👤 Author & Connect  
 
 ---
 
 ## 🎯 01 — Problem Statement
 
-Online communities need scalable ways to moderate large volumes of text.
+Online platforms need scalable ways to moderate large volumes of text.
 Manual review is time-consuming, inconsistent, and does not scale.
+
+The goal of this project is to build a machine learning model that can
+accurately classify movie reviews as **negative or positive** based on text alone.
 
 ---
 
 ## 🎯 02 — Project Goals
 
-- Preprocess and normalize text data  
+- Preprocess and normalize raw text data  
 - Compare multiple NLP modeling approaches  
 - Optimize performance using F1 score  
-- Select a production-ready model  
+- Select a model suitable for production use  
 
 ---
 
@@ -46,23 +49,25 @@ Manual review is time-consuming, inconsistent, and does not scale.
 
 - IMDb movie reviews dataset  
 - Binary sentiment labels (positive / negative)  
-- Train/test split provided  
+- Predefined train/test split  
 
 **Key Columns**
 - `review` — text of the review  
 - `pos` — sentiment label  
-- `ds_part` — dataset split flag  
+- `ds_part` — dataset split indicator  
+
+> ⚠️ The full dataset is not included. A small sample file is provided for reproducibility.
 
 ---
 
 ## 🧠 04 — Approach & Methodology
 
-The modeling pipeline included the following stages:
+The modeling pipeline followed these steps:
 
 - Text cleaning and normalization  
-- Lemmatization (NLTK and spaCy)  
+- Lemmatization using NLTK and spaCy  
 - TF-IDF vectorization (bigrams, sublinear TF)  
-- Multiple model comparisons  
+- Model training and comparison  
 
 **Models Evaluated**
 - DummyClassifier (baseline)  
@@ -77,14 +82,14 @@ The modeling pipeline included the following stages:
 
 Models were evaluated using:
 
-- F1 Score (primary metric)  
-- Precision & Recall  
+- **F1 Score** (primary metric)  
+- Precision and Recall  
 - ROC-AUC  
 
 **Best Performing Model**
 - spaCy + TF-IDF + Logistic Regression  
 - Balanced precision and recall  
-- Strong generalization on hand-labeled reviews  
+- Strong generalization on unseen reviews  
 
 ---
 
@@ -97,14 +102,25 @@ Models were evaluated using:
 - NLTK  
 - spaCy  
 - LightGBM  
-- Transformers (Hugging Face)  
+- Hugging Face Transformers  
 
 ---
 
 ## ▶️ 07 — How to Run the Project
 
-### Option 1: Run with the included sample file (recommended for GitHub)
-This repo includes a small sample dataset so the notebook can run quickly.
+### Option 1: Run using the included sample dataset (recommended)
+
+This repository includes a small sample dataset so the notebook can run
+quickly without access to the full IMDb dataset.
+
+```python
+import pandas as pd
+
+DATA_PATH = "data/sample/imdb_reviews_sample.tsv"
+df_reviews = pd.read_csv(DATA_PATH, sep="\t")
+df_reviews.head()
+
+---
 
 ```python
 import pandas as pd
@@ -122,32 +138,35 @@ df_reviews.head()
 
 
 Sprint14_Text_ML/
-├── notebooks/
+│
 ├── data/
 │   └── sample/
+│       └── imdb_reviews_sample.tsv
+│
+├── Sprint14_Text_ML.ipynb
 ├── README.md
-
+└── .gitignore
 ---
 
 ## 💡 09 — Key Takeaways
 
-Model selection is a business decision, not just a technical one.
+- Text preprocessing has a major impact on model performance
 
-Performance constraints strongly influence which models are practical in production.
+- Simpler models can outperform complex ones with strong feature engineering
 
+- Model selection should balance accuracy, interpretability, and scalability
 ---
 
 ## 🚀 10 — Next Steps & Improvements
 
-- Feature selection and refinement
-
 - Hyperparameter tuning
 
-- Production-level inference testing
+- Feature selection and refinement
 
+- Production-level inference testing
 ---
 
-## 📌 Project Files
+## 📌11 - Project Files
 
 - ✅ **Notebook:** [Sprint14_Text_ML.ipynb](./Sprint14_Text_ML.ipynb)
 - ✅ **Sample Data:** `data/sample/imdb_reviews_sample.tsv`
