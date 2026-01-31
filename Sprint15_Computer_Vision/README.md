@@ -30,10 +30,20 @@ As someone passionate about wellness and the human experience, I explored how AI
 
 ## ✨ 01 — Problem Statement
 
-Predicting a person’s age from an image is a challenging computer vision task due to variations in lighting, angles, genetics, skin tone, lifestyle, and image quality. Understanding age through AI can support more personalized user experiences — including tailored content, accessibility, and safety.
+Predicting a person’s age from an image is a challenging computer vision task
+due to variations in lighting, angles, genetics, skin tone, lifestyle, and
+image quality.
 
-> **Ethical AI Note:**  
-> Age estimation models can reflect societal biases based on the data they learn from. This project encourages thoughtful and responsible use of computer vision systems, with an emphasis on fairness, respect, and consent.
+Accurate age estimation can support more personalized user experiences —
+including tailored content, accessibility, and safety — when designed and
+applied responsibly.
+
+### ⚖️ Ethical AI Note
+
+Age prediction models can reflect biases present in the data they learn from.
+This project emphasizes thoughtful and responsible use of computer vision,
+with attention to fairness, consent, and inclusive design.
+
 
 ---
 
@@ -41,24 +51,24 @@ Predicting a person’s age from an image is a challenging computer vision task 
 
 This project was designed to:
 
-- Build a regression model capable of predicting a person’s age using facial images.  
-- Apply transfer learning to improve model performance efficiently.  
-- Demonstrate ethical, human-centered AI considerations in computer vision.  
-- Translate technical results into meaningful business and user experience value.  
+- Build a regression model to predict age from facial images  
+- Apply transfer learning to improve performance efficiently  
+- Evaluate model behavior using Mean Absolute Error (MAE)  
+- Connect technical results to human-centered and wellness-focused use cases  
 
 ---
 
 ## 🧵 03 — Dataset Overview
 
 - ~7,600 labeled face images  
-- Each image includes: `file_name` and `real_age`  
+- Each image includes:
+   - `file_name`
+   - `real_age`  
 - Data split into training, validation, and test sets  
 - Age distribution is uneven, with fewer images for ages 60+
 
-  **Example Data Sample:**  
-![Sample Images](docs/screenshots/02_sample_images_01.jpg)
-![Sample Images](docs/screenshots/02_sample_images_02.jpg)
-
+> ⚠️ The dataset is not included due to size constraints. Screenshots and
+training logs are provided to document model behavior and results.
 
 
 ---
@@ -75,7 +85,8 @@ This project was designed to:
 ## ⚙️ 05 — Quickstart
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook
 ```
@@ -86,19 +97,22 @@ jupyter notebook
 
 ```
 Sprint15_Computer_Vision/
-├─ README.md
-├─ requirements.txt
-├─ .gitignore
-├─ data/
-│  ├─ raw/
-│  └─ processed/
-├─ notebooks/
-├─ src/
-├─ models/
-├─ figures/
-├─ reports/
-└─ docs/
-   └─ screenshots/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+├── src/
+├── models/
+├── figures/
+├── reports/
+└── docs/
+    └── screenshots/
 ```
 
 ---
@@ -123,7 +137,8 @@ python -m src.train --data_dir data/processed --out_dir models/
 
 **Data Preparation**  
 - Loaded image data & labels  
-- Resized images and split into train/val/test  
+- Resized images
+- split into train/validation/test set 
 
 **Image Augmentation**  
 - Horizontal flip  
