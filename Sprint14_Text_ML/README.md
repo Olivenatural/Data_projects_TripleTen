@@ -113,7 +113,7 @@ Models were evaluated using:
 This repository includes a small sample dataset so the notebook can run
 quickly without access to the full IMDb dataset.
 
-```python
+
 import pandas as pd
 
 DATA_PATH = "data/sample/imdb_reviews_sample.tsv"
@@ -122,15 +122,15 @@ df_reviews.head()
 
 ---
 
-```python
+
 import pandas as pd
 
 DATA_PATH = "data/sample/imdb_reviews_sample.tsv"
 df_reviews = pd.read_csv(DATA_PATH, sep="\t")
 df_reviews.head()
 **Quick Demo Option**
-- Use `data/sample/imdb_reviews_sample.tsv`  
-- Adjust `DATA_PATH` in the notebook  
+- Use data/sample/imdb_reviews_sample.tsv  
+- Adjust DATA_PATH in the notebook  
 
 ---
 
@@ -169,8 +169,8 @@ Sprint14_Text_ML/
 ## 📌11 - Project Files
 
 - ✅ **Notebook:** [Sprint14_Text_ML.ipynb](./Sprint14_Text_ML.ipynb)
-- ✅ **Sample Data:** `data/sample/imdb_reviews_sample.tsv`
-- ✅ **Project Summary:** `README.md`
+- ✅ **Sample Data:** data/sample/imdb_reviews_sample.tsv
+- ✅ **Project Summary:** README.md
 
 ---
 
